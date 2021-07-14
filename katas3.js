@@ -66,8 +66,8 @@ showResults(kata5())
 function kata6() {
     let meuRetorno = []
     for(let i =1; i <= 100; i++){
-        if(3*i < 100){
-        meuRetorno.push(3*i)
+        if(i%3 == 0){
+        meuRetorno.push(i)
         }
     }
     return meuRetorno
@@ -79,8 +79,8 @@ showResults(kata6())
 function kata7() {
     let meuRetorno = []
     for(let i = 1; i <= 100; i++){
-        if(7 *i < 100){
-            meuRetorno.push(i*7)
+        if(i%7 == 0){
+            meuRetorno.push(i)
         }
     }
     return meuRetorno
@@ -91,9 +91,9 @@ showResults(kata7())
 
 function kata8() {
     let meuRetorno = []
-    for(let i = 1; i >=50; i ++){
-    if(i%5 ===0){
-        meuRetorno.push(5*i)
+    for(let i = 100; i >=1; i--){
+    if(i%3 == 0 || i%7 == 0){
+        meuRetorno.push(i)
     }
     }
     return meuRetorno
@@ -101,7 +101,7 @@ function kata8() {
    // se 3 * i for maior que 7 *i entao retorne  7 * i+1
    // implemente o código do kata 8 aqui
 }
-showResults(kata9())
+showResults(kata8())
 
 function kata9() {
     let meuRetorno = []
@@ -195,19 +195,21 @@ function kata16() {
 showResults(kata16())
 
 function kata17() {
-    let meuRetorno = 0
+    let meuRetorno = sampleArray[0]
+    console.log(meuRetorno)
     for(let i = 0; i < sampleArray.length; i++){
         if(meuRetorno > sampleArray[i]){
             meuRetorno = sampleArray[i]
         }
     }
+    console.log(meuRetorno)
     return meuRetorno
     // implemente o código do kata 17 aqui
 }
 showResults(kata17())
 
 function kata18() {
-    let meuRetorno = 0
+    let meuRetorno = sampleArray[0]
     for(let i = 0; i <sampleArray.length; i++){
         if(meuRetorno < sampleArray[i]){
             meuRetorno = sampleArray[i]
@@ -216,6 +218,7 @@ function kata18() {
     return meuRetorno
     // implemente o código do kata 18 aqui
 }
+console.log(kata18())
 showResults(kata18())
 /**
  * Daqui em diante são os bônus, por sua conta e risco
