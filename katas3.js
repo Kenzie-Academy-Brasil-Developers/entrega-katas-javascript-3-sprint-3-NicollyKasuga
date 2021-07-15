@@ -106,7 +106,7 @@ showResults(kata8())
 function kata9() {
     let meuRetorno = []
     for(let i = 1; i <= 100; i++){
-        if(5 *i < 100){
+        if(5 *i < 100 && 5*i%2 !== 0){
             meuRetorno.push(i*5)
         }
     }
